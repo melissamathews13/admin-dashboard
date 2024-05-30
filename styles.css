@@ -1,42 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 275px 1fr;
-    grid-template-rows: 165px 1fr;
-    grid-template-areas: 
-    "sidebar header"
-    "sidebar main";
+	font-family: "Roboto", sans-serif;
+	-webkit-font-smoothing: subpixel-antialiased;
+	height: 100vh;
+	display: grid;
+	grid-template-columns: 275px 1fr;
+	grid-template-rows: 165px 1fr;
+	grid-template-areas:
+		"sidebar header"
+		"sidebar main";
 }
 
-
-
 .sidebar {
-    background-color: rgba(103, 198, 199, 0.803);
-    grid-area: sidebar;
+	background-color: #64748b;
+	color: white;
+	font-size: 20px;
+	grid-area: sidebar;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 100px 1fr 1.5fr;
 }
 
 .header {
-    background-color: rgba(121, 208, 151, 0.679);
-    grid-area: header;
- 
+	background-color: #f1f5f9;
+	grid-area: header;
 }
 
 .main {
-    background-color: rgba(35, 103, 130, 0.543);
-    grid-area: main;
-
+	background-color:#e2e8f0;
+	grid-area: main;
 }
 
+.nav1,
+.nav2,
+.nav3 {
+	text-align: start;
+}
+div {
+	margin-bottom: 1em;
+}
+.dashboard {
+	font-size: 26px;
+}
+.child {
+	display: inline-block;
+	vertical-align: middle;
+}
 
-.dashboard > img {
-    width: 3em;
+.nav1 img {
+	width: 2.5em;
+	margin-top: 0.5em;
+	margin-left: 1em;
+	margin-right: 0.5em;
 }
 
 img {
-    width: 1.5em;
+	width: 1.3em;
+	margin-left: 1.5em;
+	margin-right: 1em;
+    filter: brightness(0) invert(1);
 }
