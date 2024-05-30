@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 275px 1fr;
+    grid-template-rows: 165px 1fr;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main";
+}
+
+
+
+.sidebar {
+    background-color: rgba(103, 198, 199, 0.803);
+    grid-area: sidebar;
+}
+
+.header {
+    background-color: rgba(121, 208, 151, 0.679);
+    grid-area: header;
+ 
+}
+
+.main {
+    background-color: rgba(35, 103, 130, 0.543);
+    grid-area: main;
+
+}
+
+
+.dashboard > img {
+    width: 3em;
+}
+
+img {
+    width: 1.5em;
+}
