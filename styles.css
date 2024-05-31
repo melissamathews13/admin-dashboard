@@ -81,7 +81,7 @@ div {
 	margin-top: 8px;
 	grid-template-columns: 70px 600px 100px 100px 200px;
 	grid-template-rows: 1fr;
- }
+}
 
 #magnify-icon {
 	margin-top: auto;
@@ -102,7 +102,6 @@ div {
 #bell-icon {
 	justify-self: end;
 	align-self: center;
-	
 }
 #profile-photo {
 	width: 2.8em;
@@ -116,20 +115,43 @@ div {
 .header-icon {
 	width: 1.5em;
 }
+.bottom-row {
+	display: grid;
+	grid-auto-flow: column;
+	grid-template-rows: 1fr;
+	grid-template-columns: 125px 550px 125px 125px 125px;
+	margin-top: 15px;
 
-button {
+}
+.header-button {
+	height: 38px;
+	width: 94px;
 	border: none;
 	background-color: #64748b;
 	color: white;
-	padding: 10px;
-	padding-left: 30px;
-	padding-right: 30px;
+	padding: 2px 20px 2px 20px;
 	border-radius: 30px;
-	margin-right: 20px;
 	font-size: 14px;
+	align-self: center;
+	justify-self: center;
 }
-
 
 #profile-photo-2 {
 	width: 4em;
+	justify-self: end;
+	margin-right: 20px;
+	margin-left: 25px;
+}
+#greeting {
+	display: flex;
+	flex-direction: column;
+}
+
+#greeting-top {
+	font-size: 14px;
+	margin-bottom: 4px;
+}
+
+#greeting-bottom {
+	font-size: 24px;
 }
