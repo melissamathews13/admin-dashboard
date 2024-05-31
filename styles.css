@@ -27,8 +27,11 @@ body {
 }
 
 .header {
-	background-color: #f1f5f9;
+	background-color: #f8fafc;
 	grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr;
+
 }
 
 .main {
@@ -46,6 +49,7 @@ div {
 }
 .dashboard {
 	font-size: 26px;
+    margin-top: 10px;
 }
 .child {
 	display: inline-block;
@@ -59,9 +63,40 @@ div {
 	margin-right: 0.5em;
 }
 
-img {
+#dash-symbol {
+    width: 2.5em;
+    margin-right: .3em;
+}
+.sidebar img {
 	width: 1.3em;
 	margin-left: 1.5em;
 	margin-right: 1em;
     filter: brightness(0) invert(1);
+}
+
+#search-input {
+  margin-left: 20px;  
+  margin-top: 20px;
+  padding: 5px;
+  border: none;
+  border-radius: 30px;
+  height: 20px;
+  width: 500px;
+  background-color:#cbd5e1;
+}
+
+.header img {
+    width: 1.3em;
+
+}
+button {
+    border: none;
+    background-color: #64748b;
+    color: white;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 30px;
+    margin-right: 20px;
+    font-size: 14px;
 }

@@ -5,14 +5,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Admin Dashboard</title>
 		<link rel="stylesheet" href="styles.css" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		
 	</head>
 	<body>
-		<header class="header"><div>header</div></header>
+		<header class="header">
+			<div>
+				<div>
+					<img src="images/magnify.svg" alt="magnidy-icon" />
+					<input
+						type="text"
+						name="input"
+						class="input"
+						id="search-input"
+						placeholder="Search..." />
+                        <img src="images/bell.svg" alt="">
+                    <span>Melissa Mathews</span>
+				</div>
+                <div>
+                    <span>Hi there</span>
+                    <br>
+                    <span>Melissa Mathews</span>
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+			</div>
+		</header>
 		<sidebar class="sidebar">
 			<div class="nav1">
-				<img class="child" src="images/dashboard.svg" alt="dashboard-symbol" />
+				<img class="child" id="dash-symbol" src="images/dashboard.svg" alt="dashboard-symbol" />
 				<span class="child dashboard">Dashboard</span>
 			</div>
 
@@ -38,7 +59,10 @@
 					<span class="child">Tasks</span>
 				</div>
 				<div>
-					<img class="child" src="images/communities.svg" alt="community-icon" />
+					<img
+						class="child"
+						src="images/communities.svg"
+						alt="community-icon" />
 					<span class="child">Communities</span>
 				</div>
 			</div>
