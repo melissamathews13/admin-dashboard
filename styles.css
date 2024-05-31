@@ -9,7 +9,7 @@ body {
 	-webkit-font-smoothing: subpixel-antialiased;
 	height: 100vh;
 	display: grid;
-	grid-template-columns: 275px 1fr;
+	grid-template-columns: 290px 1fr;
 	grid-template-rows: 165px 1fr;
 	grid-template-areas:
 		"sidebar header"
@@ -29,13 +29,12 @@ body {
 .header {
 	background-color: #f8fafc;
 	grid-area: header;
-    display: grid;
-    grid-template-columns: 1fr;
-
+	display: grid;
+	grid-template-columns: 1fr;
 }
 
 .main {
-	background-color:#e2e8f0;
+	background-color: #e2e8f0;
 	grid-area: main;
 }
 
@@ -44,13 +43,16 @@ body {
 .nav3 {
 	text-align: start;
 }
+
 div {
 	margin-bottom: 1em;
 }
+
 .dashboard {
 	font-size: 26px;
-    margin-top: 10px;
+	margin-top: 10px;
 }
+
 .child {
 	display: inline-block;
 	vertical-align: middle;
@@ -64,39 +66,70 @@ div {
 }
 
 #dash-symbol {
-    width: 2.5em;
-    margin-right: .3em;
+	width: 2.4em;
+	margin-right: 0.3em;
 }
 .sidebar img {
 	width: 1.3em;
 	margin-left: 1.5em;
 	margin-right: 1em;
-    filter: brightness(0) invert(1);
+	filter: brightness(0) invert(1);
+}
+.top-row {
+	display: inline-grid;
+	grid-auto-flow: column;
+	margin-top: 8px;
+	grid-template-columns: 70px 600px 100px 100px 200px;
+	grid-template-rows: 1fr;
+ }
+
+#magnify-icon {
+	margin-top: auto;
+	justify-self: end;
 }
 
 #search-input {
-  margin-left: 20px;  
-  margin-top: 20px;
-  padding: 5px;
-  border: none;
-  border-radius: 30px;
-  height: 20px;
-  width: 500px;
-  background-color:#cbd5e1;
+	margin-left: 20px;
+	margin-top: 20px;
+	padding: 5px;
+	border: none;
+	border-radius: 30px;
+	height: 20px;
+	width: 500px;
+	background-color: #cbd5e1;
 }
 
-.header img {
-    width: 1.3em;
-
+#bell-icon {
+	justify-self: end;
+	align-self: center;
+	
 }
+#profile-photo {
+	width: 2.8em;
+	align-self: center;
+	justify-self: center;
+}
+#user-name {
+	align-self: center;
+	font-size: 18px;
+}
+.header-icon {
+	width: 1.5em;
+}
+
 button {
-    border: none;
-    background-color: #64748b;
-    color: white;
-    padding: 10px;
-    padding-left: 30px;
-    padding-right: 30px;
-    border-radius: 30px;
-    margin-right: 20px;
-    font-size: 14px;
+	border: none;
+	background-color: #64748b;
+	color: white;
+	padding: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	border-radius: 30px;
+	margin-right: 20px;
+	font-size: 14px;
+}
+
+
+#profile-photo-2 {
+	width: 4em;
 }

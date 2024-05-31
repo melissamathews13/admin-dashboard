@@ -5,35 +5,37 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Admin Dashboard</title>
 		<link rel="stylesheet" href="styles.css" />
-		
 	</head>
 	<body>
 		<header class="header">
-			<div>
-				<div>
-					<img src="images/magnify.svg" alt="magnidy-icon" />
-					<input
-						type="text"
-						name="input"
-						class="input"
-						id="search-input"
-						placeholder="Search..." />
-                        <img src="images/bell.svg" alt="">
-                    <span>Melissa Mathews</span>
-				</div>
-                <div>
-                    <span>Hi there</span>
-                    <br>
-                    <span>Melissa Mathews</span>
-                    <button>New</button>
-                    <button>Upload</button>
-                    <button>Share</button>
-                </div>
+			<div class="top-row">
+				<img class="header-icon" id="magnify-icon" src="images/magnify.svg" alt="magnify-icon" />
+				<input
+					type="text"
+					name="input"
+					class="input"
+					id="search-input"
+					placeholder="Search..." />
+				<img class="header-icon" id="bell-icon" src="images/bell.svg" alt="bell-icon" />
+				<img src="images/user.png" id="profile-photo" alt="profile-photo" />
+				<span id="user-name">Melissa Mathews</span>
 			</div>
+			<div class="bottom-row">
+				<img src="images/user.png" id="profile-photo-2" alt="profile-photo" />
+				<span>Hi there</span>
+				<span>Melissa Mathews</span>
+				<button>New</button>
+				<button>Upload</button>
+				<button>Share</button>
+			</div> 
 		</header>
 		<sidebar class="sidebar">
 			<div class="nav1">
-				<img class="child" id="dash-symbol" src="images/dashboard.svg" alt="dashboard-symbol" />
+				<img
+					class="child"
+					id="dash-symbol"
+					src="images/dashboard.svg"
+					alt="dashboard-symbol" />
 				<span class="child dashboard">Dashboard</span>
 			</div>
 
