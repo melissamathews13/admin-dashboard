@@ -9,29 +9,37 @@
 	<body>
 		<header class="header">
 			<div class="top-row">
-				<img class="header-icon" id="magnify-icon" src="images/magnify.svg" alt="magnify-icon" />
+				<img
+					class="header-icon"
+					id="magnify-icon"
+					src="images/magnify.svg"
+					alt="magnify-icon" />
 				<input
 					type="text"
 					name="input"
 					class="input"
 					id="search-input"
 					placeholder="Search..." />
-				<img class="header-icon" id="bell-icon" src="images/bell.svg" alt="bell-icon" />
+				<img
+					class="header-icon"
+					id="bell-icon"
+					src="images/bell.svg"
+					alt="bell-icon" />
 				<img src="images/user.png" id="profile-photo" alt="profile-photo" />
 				<span id="user-name">Melissa Mathews</span>
 			</div>
 			<div class="bottom-row">
 				<img src="images/user.png" id="profile-photo-2" alt="profile-photo" />
-                <div id="greeting">
-                    <span id="greeting-top">Hi there,</span>
-                
-				<span id="greeting-bottom">Melissa Mathews (@melissa)</span>
-                </div>
-				
+				<div id="greeting">
+					<span id="greeting-top">Hi there,</span>
+
+					<span id="greeting-bottom">Melissa Mathews (@melissa)</span>
+				</div>
+
 				<button id="new-button" class="header-button">New</button>
 				<button class="header-button">Upload</button>
 				<button class="header-button">Share</button>
-			</div> 
+			</div>
 		</header>
 		<sidebar class="sidebar">
 			<div class="nav1">
@@ -88,15 +96,91 @@
 				</div>
 			</div>
 		</sidebar>
+
 		<main class="main">
-			<div class="card"></div>
-			<div class="card"></div>
-			<div class="card"></div>
-			<div class="card"></div>
-			<div class="card"></div>
-			<div class="card"></div>
-			<div class="card"></div>
-			<div class="card"></div>
+			
+			<section class="left-section">
+				<p id="projects" class="your-projects main-title">Your Projects</p>
+				
+					<div class="card card-1">
+						<h4>Super Cool Project</h1>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur repellat </p>
+						<div id="body-icons">
+							<img class="body-icon" src="images/star.svg" alt="star-icon">
+							<img  class="body-icon"src="images/eye.svg" alt="eye-icon">
+							<img  class="body-icon"src="images/share.svg" alt="share-icon"></div>
+						</div>
+					</div>
+					<div class="card card-2">
+						<h4>Less Cool Project</h1>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur repellat </p>
+							<div id="body-icons">
+								<img class="body-icon" src="images/star.svg" alt="star-icon">
+								<img  class="body-icon"src="images/eye.svg" alt="eye-icon">
+								<img  class="body-icon"src="images/share.svg" alt="share-icon"></div>
+							</div>
+					</div>
+					<div class="card card-3"> <h4>Impossible App</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur repellat </p>
+						<div id="body-icons">
+							<img class="body-icon" src="images/star.svg" alt="star-icon">
+							<img  class="body-icon"src="images/eye.svg" alt="eye-icon">
+							<img  class="body-icon"src="images/share.svg" alt="share-icon"></div>
+						</div>
+					<div class="card card-4"> <h4>Easy Peasy App</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur repellat </p>
+						<div id="body-icons">
+							<img class="body-icon" src="images/star.svg" alt="star-icon">
+							<img  class="body-icon"src="images/eye.svg" alt="eye-icon">
+							<img  class="body-icon"src="images/share.svg" alt="share-icon"></div>
+						</div></div>
+					<div class="card card-5"> <h4>Ad Blocker</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur repellat </p>
+						<div id="body-icons">
+							<img class="body-icon" src="images/star.svg" alt="star-icon">
+							<img  class="body-icon"src="images/eye.svg" alt="eye-icon">
+							<img  class="body-icon"src="images/share.svg" alt="share-icon"></div>
+						</div></div>
+					<div class="card card-6"> <h4>Money Maker</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores pariatur repellat </p>
+						<div id="body-icons">
+							<img class="body-icon" src="images/star.svg" alt="star-icon">
+							<img  class="body-icon"src="images/eye.svg" alt="eye-icon">
+							<img  class="body-icon"src="images/share.svg" alt="share-icon"></div>
+						</div></div>
+				</section>
+				<section class="right-section">
+					<p id="announcements"class='main-title'>Announcements</p>
+					<div class="card card-long">
+						<h4>Site Maintenance</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rem expedita molestiae </p>
+						<h4>Community Share Day</h4>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rem expedita molestiae </p>
+						<h4>Updated Privacy Policy</h4>
+						<p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad rem expedita molestiae </p></p>
+					 </div>
+					<p id="trending" class="main-title">Trending</p> 
+					  <div class="card card-long trend-card">
+						 <img class="trending-profile" src="images/trending-profile.png" alt="profile-icon">
+						 <img class="trending-profile" src="images/trending-profile.png" alt="profile-icon">
+						 <img class="trending-profile" src="images/trending-profile.png" alt="profile-icon">
+						 <img class="trending-profile" src="images/trending-profile.png" alt="profile-icon">
+						 <p>@tegan</p>
+						 <p>World Peace Builder</p>
+						 
+						 <p>@morgan</p>
+						 <p>Super Cool Project</p>
+						
+						 <p>@kendall</p>
+						 <p>Life Changing App</p>
+						
+						 <p>@alex</p>
+						 <p>No Traffic Maker</p>
+					 </div> 
+				 </div>
+			
+			</section>
+			
 		</main>
 	</body>
 </html>

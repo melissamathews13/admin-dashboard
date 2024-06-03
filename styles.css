@@ -10,7 +10,7 @@ body {
 	height: 100vh;
 	display: grid;
 	grid-template-columns: 290px 1fr;
-	grid-template-rows: 165px 1fr;
+	grid-template-rows: 170px 1fr;
 	grid-template-areas:
 		"sidebar header"
 		"sidebar main";
@@ -35,7 +35,69 @@ body {
 
 .main {
 	background-color: #e2e8f0;
+	box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+		rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 	grid-area: main;
+	display: grid;
+	grid-template-columns: 1fr 0.5fr;
+	gap: 0.5em;
+}
+
+.main-title {
+	font-size: 20px;
+}
+#trending {
+	margin-top: 30px;
+}
+
+#projects {
+margin-top: 25px;
+}
+#announcements {
+margin-top: 30px;
+}
+.your-projects {
+	height: 50px;
+	width: 150px;
+}
+
+.left-section {
+	display: grid;
+	grid-template-columns: repeat(2, 390px);
+	grid-template-rows: 30px repeat(3, 240px);
+	grid-template-areas: 
+	"title ..."
+	"card-1 card-2"
+	"card-3 card-4"
+	'card-5 card-6';
+}
+.card-1 {
+	grid-area: card-1;
+}
+.card-2 {
+	grid-area: card-2;
+}
+.card-3 {
+	grid-area: card-3;
+}
+.card-4 {
+	grid-area: card-4;
+}
+.card-5 {
+	grid-area: card-5;
+}
+.card-6 {
+	grid-area: card-6;
+}
+
+.right-section {
+	display: grid;
+	grid-template-rows: 30px 350px 30px;
+}
+.links {
+	display: grid;
+	grid-template-columns: 200px;
+	grid-template-rows: 200px 200px;
 }
 
 .nav1,
@@ -112,7 +174,8 @@ div {
 	align-self: center;
 	font-size: 18px;
 }
-.header-icon {
+.header-icon,
+.body-icon {
 	width: 1.5em;
 }
 .bottom-row {
@@ -121,7 +184,6 @@ div {
 	grid-template-rows: 1fr;
 	grid-template-columns: 125px 550px 125px 125px 125px;
 	margin-top: 15px;
-
 }
 .header-button {
 	height: 38px;
@@ -154,4 +216,53 @@ div {
 
 #greeting-bottom {
 	font-size: 24px;
+}
+
+.card {
+	background-color: #f8fafc;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px,
+		rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+		rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+	border-radius: 15px;
+	height: 210px;
+	width: 360px;
+	display: grid;
+	margin-top: 30px;
+	margin-left: 20px;
+	margin-bottom: 20px;
+	
+}
+.card img {
+	flex-direction: row;
+}
+.card-long {
+	height: 320px;
+	width: 300px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#body-icons {
+	display: flex;
+	flex-direction: end;
+	justify-content: flex-end;
+	gap: 25px;
+	margin-right: 15px;
+}
+
+h4 {
+	margin-top: 30px;
+	margin-bottom: auto;
+}
+h4,
+p {
+	margin-left: 30px;
+}
+
+.trending-profile {
+	width: 2.8em;
+}
+.trend-card {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
 }
