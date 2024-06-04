@@ -13,5 +13,4 @@ Contributions, issues and feature requests are welcome!
 
 ## Acknowledgement
 
-Project inspitation from [The Odin Project]
-(https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard)
+Project inspitation from [The Odin Project](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-admin-dashboard)
